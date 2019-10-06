@@ -1,0 +1,41 @@
+body {
+    font-family: arial, sans-serif;    
+    margin: 0;
+  }
+  
+  .site-container {
+    padding: 0;  
+    font-size: 14px;
+    line-height: 18px;
+    background-color: gray;
+  }
+  
+  
+  .message {
+    margin: 8px 0 0px 0;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 8px;
+    border-top: 1px solid #E9E9E9;
+    border-bottom: 1px solid #E9E9E9;
+    background: #FDFDFD;
+    height: 450px;   
+    overflow-y : scroll;
+  }
+    .message-header {
+      padding-bottom: 8px;
+    }   
+      .message-author-picture {
+        float: left;
+      }
+      
+      .message-author, .message-written {
+        line-height: 40px;
+        margin-left: 60px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      
+      .message-written {
+        color: #888;
+      }  

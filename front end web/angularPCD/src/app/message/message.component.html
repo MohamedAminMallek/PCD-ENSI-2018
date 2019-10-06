@@ -1,0 +1,42 @@
+
+          <div class="grid-container">
+            <div class="grid-item" *ngFor = "let data of httpdata">
+                    <div class="container">
+                        <div class="box image"> 
+                          <div class="box-comments">
+                            <div class="comment"><img src="https://assets.t3n.sc/news/wp-content/uploads/2016/03/facebook-klarnamenpflicht-profilbild.jpg?auto=compress%2Cformat&fit=crop&fm=jpg&h=347&ixlib=php-1.1.0&q=65&w=620&s=9c6e8c2805496497ba7c26f182d3ac3b" alt="" />
+                              <div class="content">
+                                
+                                  
+                               
+                                <h3>
+                                  {{ data.right.nom  }} {{ data.right.prenom  }}
+                                  <span><time> 1 hr </time></span>
+                                </h3>
+                                <p>
+                                {{data.left.titre}}
+                                <br>
+                                {{data.left.description}}
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                            <div class="box-new-comment" style="background:white">
+                              <div class="content" style="background:white">
+                              <form [formGroup]="formdata" (ngSubmit) = "onClickSubmit(data.left,formdata.value)">  
+                                <div class="row"style="background:white">
+                                  <textarea placeholder="write a comment..." formControlName="reponse"></textarea>
+                                </div>
+                                <div style="text-align:center;">
+                                      <button type="submit" class="button button5">Répondre</button>
+                                </div>
+                              </form>  
+                              </div>
+                            </div>
+                        </div>  
+                      </div>
+                </div>
+                
+                </div>
+
+                

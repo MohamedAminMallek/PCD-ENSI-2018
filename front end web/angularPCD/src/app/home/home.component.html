@@ -1,0 +1,44 @@
+
+
+<html lang="en" class="full-height">
+    
+    <header>
+    
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark indigo">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">  
+                <button type="submit" (click)="logout()" class="btn btn-danger" style="margin-left: 90%;height: 10px;width:175px;font-size: 12px;vertical-align: middle;margin-bottom:0px">Déconnexion</button>
+            </div>
+        </nav>
+    </header>
+
+<br>
+<br>
+
+<div class="site-container">
+  <div class="message">
+    <div class="message-header">
+      <div class="message-author-picture"> <span class="badge badge-pill indigo"><i class="fa fa-bullhorn fa-3x" aria-hidden="true"></i></span></div>
+      <div class="message-author">Gestion des réclamations</div>
+    </div>
+    <app-message></app-message>
+  </div>
+  <div class="message">
+    <div class="message-header">
+      <div class="message-author-picture"> <span class="badge badge-pill purple"><i class="fa fa-users fa-3x" aria-hidden="true"></i></span></div>
+     
+      <div class="message-author">Gestion des sanctions</div>
+    </div>
+    <app-users></app-users>
+  </div>
+  <div class="message">
+    <div class="message-header">
+      <div class="message-author-picture">
+          <span class="badge orange"><i class="fa fa-bell fa-3x" aria-hidden="true"></i></span>
+      </div>
+      <div class="message-author">Gestion des propositions métiers</div>
+    </div>
+    <app-proposition></app-proposition>
+    
+  </div>
+<div>
+

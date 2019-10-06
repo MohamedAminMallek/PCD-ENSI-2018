@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/activity_register"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:paddingBottom="@dimen/activity_vertical_margin"
+  android:paddingLeft="@dimen/activity_horizontal_margin"
+  android:paddingRight="@dimen/activity_horizontal_margin"
+  android:paddingTop="@dimen/activity_vertical_margin"
+  android:orientation="vertical"
+  tools:context="servicehabitat.ensi.com.frontpcdmobile.RegisterActivity">
+
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Inscription"
+    android:textAlignment="center"
+    android:textSize="80px"
+    android:layout_marginBottom="50px"
+    />
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+    <EditText
+      android:layout_width="match_parent"
+      android:layout_weight="1"
+      android:layout_height="wrap_content"
+      android:id="@+id/nom"
+      android:hint="Votre nom..."/>
+    <EditText
+      android:layout_width="match_parent"
+      android:layout_weight="1"
+      android:layout_height="wrap_content"
+      android:id="@+id/prenom"
+      android:hint="Votre prenom..."/>
+  </LinearLayout>
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+    <EditText
+      android:layout_width="match_parent"
+      android:layout_weight="1"
+      android:layout_height="wrap_content"
+      android:id="@+id/cin"
+      android:inputType="numberSigned"
+      android:hint="Votre cin..."/>
+    <EditText
+      android:layout_width="match_parent"
+      android:layout_weight="1"
+      android:layout_height="wrap_content"
+      android:id="@+id/adresse"
+      android:hint="Votre adresse..."/>
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+    <EditText
+      android:id="@+id/username"
+      android:layout_width="match_parent"
+      android:layout_weight="1"
+      android:layout_height="wrap_content"
+      android:hint="Nom d'utilisateur"/>
+    <EditText
+      android:layout_width="match_parent"
+      android:layout_weight="1"
+      android:id="@+id/password"
+      android:layout_height="wrap_content"
+      android:hint="Mot de passe"/>
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+    <EditText
+      android:layout_width="match_parent"
+      android:layout_weight="1"
+      android:layout_height="wrap_content"
+      android:id="@+id/tel"
+      android:inputType="phone"
+      android:textAlignment="center"
+      android:hint="Numéro de téléphone.."/>
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+    <Button
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="2"
+      android:text="s'inscrire"
+      android:id="@+id/confirmer"/>
+  </LinearLayout>
+
+</LinearLayout>

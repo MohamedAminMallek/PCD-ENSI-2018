@@ -1,0 +1,65 @@
+
+
+<div style="width: 100%;overflow:auto;">
+    <div style="float:left; width: 65%">
+    
+
+
+<div class="grid-container">
+<div class="grid-item" *ngFor = "let data of httpdata">  
+<div class="card">
+    <div class="card-header deep-orange lighten-1 white-text">Cin : {{data.id.cin}}</div>
+    <div class="card-body">
+        <h4 class="card-title">{{data.titre}}</h4>
+        <p class="card-text">{{data.description}}.</p>
+      <!--<form [formGroup]="formdata" (ngSubmit) = "onClickSubmit(data,formdata.value)">-->
+        <button class="btn btn-deep-orange" type="submit" (click)="submit('YES',data)" value="Yes">Accepter</button>
+        <button class="btn btn-deep-orange" type="submit" (click)="submit('NO',data)" value="No">Réfuser</button>
+      <!--</form>-->   
+    </div>
+</div>
+
+</div>      
+</div>
+
+</div>
+
+<div style="float:left;border:3px solid gray;width:35%;">
+  <h5 style="text-align:center">Les métiers disponibles</h5>
+<div class="list-group" style="overflow-y : scroll;height:280px">
+    <div class="list-group-item list-group-item-action flex-column align-items-start" *ngFor = "let data2 of httpdata2">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">{{data2.titre}}</h5>
+        
+      </div>
+      <p class="mb-1">{{data2.description}}.</p>
+    </div>
+    
+  </div>
+  <div style="background-color:antiquewhite;">
+    <h5 style="text-align:center;text-decoration: underline black;" (click)="showFormMetier()">Ajouter un nouveau métier</h5>
+    <table *ngIf="show">
+        <form [formGroup]="formdata" (ngSubmit) = "onClickSubmit(formdata.value)">
+        <tr>
+        <td>
+            <div class="form-group">
+                <input type="text" class="form-control" id="formGroupExampleInputMD" formControlName="titre" placeholder="Titre">
+            </div>
+        </td>
+        <tr>
+        <td>
+          <div class="form-group">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" formControlName="description" placeholder="Description"></textarea>
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <button type="submit" class="btn btn-info">Ajouter</button>
+        </td>
+      </tr>
+    </form>
+    </table>
+  </div>            
+</div>
+</div>

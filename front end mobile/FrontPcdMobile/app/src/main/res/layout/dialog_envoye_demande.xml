@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Fournisseur : "
+    android:id="@+id/nomdufrs"
+    android:textSize="70px"
+    android:textAlignment="center"
+    />
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Avis des utilisateurs : "
+    android:id="@+id/scoredufrs"
+    android:textSize="70px"
+    android:layout_marginTop="35px"
+    android:layout_marginBottom="35px"
+    android:textAlignment="center"
+    android:textColor="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color"
+    android:linksClickable="true"/>
+
+  <EditText
+    android:id="@+id/titreDemandeMaps"
+    android:inputType="text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginBottom="4dp"
+    android:hint="Tapez un titre pour votre probléme..." />
+  <EditText
+    android:id="@+id/descDemandeMaps"
+    android:inputType="text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginBottom="16dp"
+    android:fontFamily="sans-serif"
+    android:hint="Tapez une description pour votre probléme..."/>
+</LinearLayout>

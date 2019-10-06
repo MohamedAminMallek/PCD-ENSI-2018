@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/demandeurName"
+    android:text="Client : "
+    android:textSize="80px"/>
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/distance"
+    android:text="Distance : "
+    android:textSize="55px"/>
+
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Avis des utilisateurs : "
+    android:textSize="60px"
+    android:textColor="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color"
+    android:layout_marginTop="40px"
+    android:layout_marginBottom="40px"
+    android:id="@+id/avisdesusers"
+    android:clickable="true"/>
+
+  <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/qestion"
+    android:textSize="75px"
+    android:textAlignment="center"
+    android:text="Voulez vous accepteé cette demande ?"/>
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="55px"
+      android:textAlignment="center"
+      android:text="Si vous acceptez cette demande votre numéro sera communiqué au client"
+      android:id="@+id/nb"/>
+</LinearLayout>

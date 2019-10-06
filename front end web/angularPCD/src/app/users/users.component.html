@@ -1,0 +1,65 @@
+<!--Table-->
+<br>
+<br>                
+<table class="table table-responsive-md">
+        
+            <!--Table head-->
+            <thead class="cyan lighten-3">
+                <tr>
+                    <th class="th-lg">CIN</th>
+                    <th class="th-lg">Nom & Prénom</th>
+                    <th class="th-lg">Téléphone</th>
+                    <th class="th-lg">Score</th>
+                    <th class="th-lg">Sanctionné ?</th>
+                    <th class="th-lg">Sanction(jours)</th>
+                    <th class="th-lg"></th>
+                </tr>
+            </thead>
+            <!--Table head-->
+        
+            <!--Table body-->
+            <tbody>
+                <tr *ngFor = "let data of httpdata">
+                                                                                
+                    <td>{{data[0]}}</td>
+                    <td>{{data[1]}} {{data[2]}}</td>
+                    <td>{{data[3]}}</td>
+                    <td>{{data[12] | number : '1.1-2'}}({{data[7]}})</td>
+                    
+                    <td>
+                        {{data[11]>ndate}}
+                    </td>
+                    <td>
+                        <form [formGroup]="formdata" (ngSubmit) = "onClickSubmit(data,formdata.value)">
+                        <input type="number" formControlName="jours"> 
+                        <button type="submit" class="btn btn-danger" style="height: 35px;width:150px;font-size: 12px;vertical-align: middle;margin-top:0px">Bannir</button>
+                        </form>
+                    </td>
+                    <td>
+                              
+                    </td>
+                </tr>
+            </tbody>
+            <!--Table body-->
+        
+</table>
+
+<script>
+        function myFunction() {
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }       
+          }
+        }
+</script>
